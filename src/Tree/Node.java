@@ -9,27 +9,27 @@ import java.util.ArrayList;
 public class Node {
 
 
-        private String _identifier;
-        private ArrayList<Integer> _forwardPointers;
+        private String identifier;
+        private ArrayList<Integer> forwardPointers;
 
-        // constructor
+
         public Node(String identifier) {
-            _identifier = identifier;
-            _forwardPointers = new ArrayList<Integer>();
+            identifier = identifier;
+            forwardPointers = new ArrayList<Integer>();
         }
 
-        // properties
+
         public String getIdentifier() {
-            return _identifier;
+            return identifier;
         }
 
         public ArrayList<Integer> getForwardPointers() {
-            return _forwardPointers;
+            return forwardPointers;
         }
 
         // public interface
         public void addForwardPointer(int index) {
-            _forwardPointers.add(index);
+            forwardPointers.add(index);
         }
     }
 
